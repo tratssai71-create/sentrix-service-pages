@@ -744,27 +744,20 @@
 
     .dl-card {
       flex-shrink: 0;
-      width: 280px;
-      background: var(--white);
-      border-radius: 12px;
+      width: 240px;
+      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-      transition: transform 0.3s;
-    }
-
-    .dl-card:hover {
-      transform: translateY(-4px);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
 
     .dl-card-img {
-      aspect-ratio: 4/3;
+      aspect-ratio: 3/4;
       background: var(--light-gray);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 13px;
+      font-size: 12px;
       color: var(--dark-gray);
-      overflow: hidden;
     }
 
     .dl-card-img img {
@@ -773,38 +766,24 @@
       object-fit: cover;
     }
 
-    .dl-card-body {
-      padding: 16px 20px;
+    .download-cta {
+      text-align: center;
+      margin-top: 40px;
     }
 
-    .dl-card-tag {
+    .download-cta a {
       display: inline-block;
-      font-size: 10px;
-      font-weight: 600;
-      color: var(--dark-gray);
-      background: var(--bg-gray);
-      padding: 3px 10px;
-      border-radius: 100px;
-      margin-bottom: 8px;
-    }
-
-    .dl-card-body h3 {
+      padding: 14px 40px;
       font-size: 14px;
-      font-weight: 700;
-      color: var(--black);
-      line-height: 1.5;
-      margin-bottom: 8px;
-    }
-
-    .dl-card-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
       font-weight: 600;
       color: var(--black);
-      border-bottom: 1px solid var(--black);
-      padding-bottom: 2px;
+      border: 1px solid var(--black);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .download-cta a:hover {
+      background: var(--black);
+      color: var(--white);
     }
 
     /* ===== FAQ ===== */
@@ -1348,103 +1327,22 @@
     </div>
     <div class="download-track-wrap">
       <div class="download-track">
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">SNS運用</span>
-            <h3>Instagram採用運用ガイドブック</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">WEB広告</span>
-            <h3>採用広告の始め方マニュアル</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">採用LP</span>
-            <h3>採用LP制作 成功事例集</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">TikTok</span>
-            <h3>TikTok採用活用ガイド</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">総合</span>
-            <h3>SENTRIX サービス資料</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">事例</span>
-            <h3>岡山企業の採用成功事例</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">SNS運用</span>
-            <h3>Instagram採用運用ガイドブック</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">WEB広告</span>
-            <h3>採用広告の始め方マニュアル</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">採用LP</span>
-            <h3>採用LP制作 成功事例集</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">TikTok</span>
-            <h3>TikTok採用活用ガイド</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">総合</span>
-            <h3>SENTRIX サービス資料</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
-        <div class="dl-card">
-          <div class="dl-card-img">画像追加予定</div>
-          <div class="dl-card-body">
-            <span class="dl-card-tag">事例</span>
-            <h3>岡山企業の採用成功事例</h3>
-            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
-          </div>
-        </div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
+        <div class="dl-card"><div class="dl-card-img">画像追加予定</div></div>
       </div>
+    </div>
+    <div class="download-cta">
+      <a href="/downroad">資料ダウンロード一覧 →</a>
     </div>
   </section>
 
