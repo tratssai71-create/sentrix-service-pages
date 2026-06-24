@@ -708,6 +708,105 @@
       border-color: rgba(255,255,255,0.7);
     }
 
+    /* ===== DOWNLOAD ===== */
+    .download {
+      padding: 72px 0;
+      background: var(--bg-gray);
+      overflow: hidden;
+    }
+
+    .download-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      margin-bottom: 40px;
+    }
+
+    .download-track-wrap {
+      position: relative;
+    }
+
+    .download-track {
+      display: flex;
+      gap: 24px;
+      animation: scrollCarousel 30s linear infinite;
+      width: max-content;
+    }
+
+    .download-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes scrollCarousel {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .dl-card {
+      flex-shrink: 0;
+      width: 280px;
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      transition: transform 0.3s;
+    }
+
+    .dl-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .dl-card-img {
+      aspect-ratio: 4/3;
+      background: var(--light-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--dark-gray);
+      overflow: hidden;
+    }
+
+    .dl-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .dl-card-body {
+      padding: 16px 20px;
+    }
+
+    .dl-card-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--dark-gray);
+      background: var(--bg-gray);
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 8px;
+    }
+
+    .dl-card-body h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--black);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .dl-card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--black);
+      border-bottom: 1px solid var(--black);
+      padding-bottom: 2px;
+    }
+
     /* ===== FAQ ===== */
     .faq {
       padding: 72px 40px;
@@ -1236,6 +1335,114 @@
         <button class="faq-question"><span class="faq-num">Q5</span>どれくらいで効果が出ますか？<span class="faq-toggle"></span></button>
         <div class="faq-answer">
           <div class="faq-answer-inner">SNS運用は3〜6ヶ月で応募数の変化が見えてくるケースが多いです。WEB広告は配信開始後すぐに反応が出始めますが、最適化には1〜2ヶ月ほどかかります。月次レポートで効果を可視化しながら改善を続けます。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="download">
+    <div class="download-header">
+      <p class="section-label">DOWNLOAD</p>
+      <h2 class="section-title">資料ダウンロード</h2>
+    </div>
+    <div class="download-track-wrap">
+      <div class="download-track">
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">SNS運用</span>
+            <h3>Instagram採用運用ガイドブック</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">WEB広告</span>
+            <h3>採用広告の始め方マニュアル</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">採用LP</span>
+            <h3>採用LP制作 成功事例集</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">TikTok</span>
+            <h3>TikTok採用活用ガイド</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">総合</span>
+            <h3>SENTRIX サービス資料</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">事例</span>
+            <h3>岡山企業の採用成功事例</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">SNS運用</span>
+            <h3>Instagram採用運用ガイドブック</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">WEB広告</span>
+            <h3>採用広告の始め方マニュアル</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">採用LP</span>
+            <h3>採用LP制作 成功事例集</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">TikTok</span>
+            <h3>TikTok採用活用ガイド</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">総合</span>
+            <h3>SENTRIX サービス資料</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
+        </div>
+        <div class="dl-card">
+          <div class="dl-card-img">画像追加予定</div>
+          <div class="dl-card-body">
+            <span class="dl-card-tag">事例</span>
+            <h3>岡山企業の採用成功事例</h3>
+            <a href="/downroad" class="dl-card-btn">無料ダウンロード →</a>
+          </div>
         </div>
       </div>
     </div>
